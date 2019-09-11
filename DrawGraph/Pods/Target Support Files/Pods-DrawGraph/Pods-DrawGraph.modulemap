@@ -1,0 +1,6 @@
+framework module Pods_DrawGraph {
+  umbrella header "Pods-DrawGraph-umbrella.h"
+
+  export *
+  module * { export * }
+}
