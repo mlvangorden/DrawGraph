@@ -14,24 +14,28 @@ let screen_height = screenBounds.height
 let screen_scale = UIScreen.main.scale
 
 class ViewController: UIViewController {
+    @IBOutlet weak var originX: UITextField?
+    @IBOutlet weak var originY: UITextField?
+    @IBOutlet weak var height: UITextField?
+    @IBOutlet weak var width: UITextField?
     
     let f = GraphView(frame: CGRect(x: 0, y: 50, width: screen_width, height: screen_height - 75))
-    let shape = UIView()
+    var shape = UIView()
     var lastPoint = CGPoint.zero
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let childView : UIView = UIView(frame: CGRect(x: 0, y: 0, width: screen_width, height: screen_height) )
+        /*let childView : UIView = UIView(frame: CGRect(x: 0, y: 0, width: screen_width, height: screen_height) )
         f.backgroundColor = UIColor.white
         self.view.addSubview(childView)
         self.view.addSubview(f)
         shape.layer.borderColor = UIColor.black.cgColor
         shape.backgroundColor = UIColor.clear
         shape.isHidden = true
-        self.view.addSubview(shape)
+        self.view.addSubview(shape)*/
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             lastPoint = touch.location(in: f)
         }
@@ -61,7 +65,6 @@ class ViewController: UIViewController {
         
         //User has lift his finger, use the rect
         let shapeToDraw = shape.frame
-        UIGraphicsPushContext( UIGraphicsGetCurrentContext() ?? <#default value#>)
         UIColor.blue.setFill()
         UIRectFill(shapeToDraw)
         f.draw(shapeToDraw)
@@ -70,7 +73,7 @@ class ViewController: UIViewController {
         
         
         shape.frame = CGRect.zero //reset overlay for next tap
-    }
+    }*/
 
 }
 
