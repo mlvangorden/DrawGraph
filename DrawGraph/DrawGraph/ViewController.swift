@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var originY: UITextField?
     @IBOutlet weak var height: UITextField?
     @IBOutlet weak var width: UITextField?
+    @IBOutlet weak var draw: UIButton!
+    
+    var originX_value = -1
+    var originY_value = -1
+    var height_value = -1
+    var width_value = -1
     
     let f = GraphView(frame: CGRect(x: 0, y: 50, width: screen_width, height: screen_height - 75))
     var shape = UIView()
@@ -25,14 +31,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*let childView : UIView = UIView(frame: CGRect(x: 0, y: 0, width: screen_width, height: screen_height) )
-        f.backgroundColor = UIColor.white
-        self.view.addSubview(childView)
-        self.view.addSubview(f)
-        shape.layer.borderColor = UIColor.black.cgColor
-        shape.backgroundColor = UIColor.clear
-        shape.isHidden = true
-        self.view.addSubview(shape)*/
+        var shape : UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1) )
+        let line1 : UIView = UIView(frame: CGRect(x: 0, y: 150, width: screen_width, height: 1) )
+        let line2 : UIView = UIView(frame: CGRect(x: 0, y: screen_height - 30, width: screen_width, height: 1))
+        line1.backgroundColor = UIColor.black
+        line2.backgroundColor = UIColor.black
+        //self.view.addSubview(childView)
+        //self.view.insertSubview(f, at: 0)
+        //shape.layer.borderColor = UIColor.black.cgColor
+        //shape.backgroundColor = UIColor.clear
+        //shape.isHidden = true
+        self.view.addSubview(line1)
+        self.view.addSubview(line2)
+        
     }
     
     /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -14,6 +14,7 @@
 		59691E25232BD29A0057FF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59691E23232BD29A0057FF47 /* LaunchScreen.storyboard */; };
 		59691E30232BD29A0057FF47 /* DrawGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E2F232BD29A0057FF47 /* DrawGraphTests.swift */; };
 		59691E3B232BD29A0057FF47 /* DrawGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E3A232BD29A0057FF47 /* DrawGraphUITests.swift */; };
+		59691E4B23351A910057FF47 /* draw.png in Resources */ = {isa = PBXBuildFile; fileRef = 59691E4A23351A910057FF47 /* draw.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		59691E36232BD29A0057FF47 /* DrawGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59691E3A232BD29A0057FF47 /* DrawGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawGraphUITests.swift; sourceTree = "<group>"; };
 		59691E3C232BD29A0057FF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59691E4A23351A910057FF47 /* draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		59691E19232BD2950057FF47 /* DrawGraph */ = {
 			isa = PBXGroup;
 			children = (
+				59691E4A23351A910057FF47 /* draw.png */,
 				59691E1A232BD2950057FF47 /* AppDelegate.swift */,
 				59691E1C232BD2950057FF47 /* ViewController.swift */,
 				59691E1E232BD2950057FF47 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59691E25232BD29A0057FF47 /* LaunchScreen.storyboard in Resources */,
+				59691E4B23351A910057FF47 /* draw.png in Resources */,
 				59691E22232BD29A0057FF47 /* Assets.xcassets in Resources */,
 				59691E20232BD2950057FF47 /* Main.storyboard in Resources */,
 			);
