@@ -1,0 +1,785 @@
+commit 8880a3195cfb8755fe2e94874472b69a70152318
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Sat Sep 21 16:34:32 2019 -0400
+
+    Complete 9/21/19 4:34pm
+
+ .DS_Store                                          | Bin 8196 -> 8196 bytes
+ DrawGraph/.DS_Store                                | Bin 8196 -> 8196 bytes
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  10 ++--
+ .../UserInterfaceState.xcuserstate                 | Bin 44316 -> 47366 bytes
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     |  58 +++++++++------------
+ DrawGraph/DrawGraph/Info.plist                     |   8 +--
+ DrawGraph/DrawGraph/ViewController.swift           |  51 +++++++++++-------
+ README.md                                          |  47 +++++++++++++++++
+ 8 files changed, 115 insertions(+), 59 deletions(-)
+
+commit 1479bc6c363ba06190a46a7cfbf612b922f9328c
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Sat Sep 21 07:50:33 2019 -0400
+
+    Complete
+
+ .../UserInterfaceState.xcuserstate                 | Bin 45091 -> 44316 bytes
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     |  35 +++++++++++----------
+ DrawGraph/DrawGraph/ViewController.swift           |  32 ++++++++++++++++---
+ 3 files changed, 45 insertions(+), 22 deletions(-)
+
+commit a64af6fb49209a704a3aa5e5f02224e80ab2ee15
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Sat Sep 21 00:46:46 2019 -0400
+
+    Progress 9/21/19 12:46am
+
+ .DS_Store                                          | Bin 6148 -> 8196 bytes
+ DrawGraph Image Templates/.DS_Store                | Bin 0 -> 8196 bytes
+ DrawGraph Image Templates/angry_left_eye.afdesign  | Bin 0 -> 409449 bytes
+ DrawGraph Image Templates/app_icons/.DS_Store      | Bin 0 -> 6148 bytes
+ .../app_icons/app_icon.afdesign                    | Bin 0 -> 441144 bytes
+ .../app_icons/app_icon_1024pt.afdesign             | Bin 0 -> 402880 bytes
+ .../app_icons/app_icon_120pt.afdesign              | Bin 0 -> 418719 bytes
+ .../app_icons/app_icon_180pt.afdesign              | Bin 0 -> 414903 bytes
+ .../app_icons/app_icon_20pt.afdesign               | Bin 0 -> 440067 bytes
+ .../app_icons/app_icon_29pt.afdesign               | Bin 0 -> 436100 bytes
+ .../app_icons/app_icon_40pt.afdesign               | Bin 0 -> 431290 bytes
+ .../app_icons/app_icon_58pt.afdesign               | Bin 0 -> 427954 bytes
+ .../app_icons/app_icon_60pt.afdesign               | Bin 0 -> 425843 bytes
+ .../app_icons/app_icon_87pt.afdesign               | Bin 0 -> 422453 bytes
+ DrawGraph Image Templates/draw.afdesign            | Bin 0 -> 424130 bytes
+ .../happy_jagged_mouth.afdesign                    | Bin 0 -> 404984 bytes
+ DrawGraph Image Templates/happy_left_eye.afdesign  | Bin 0 -> 413185 bytes
+ DrawGraph Image Templates/happy_mouth.afdesign     | Bin 0 -> 399918 bytes
+ DrawGraph Image Templates/sad_left_eye.afdesign    | Bin 0 -> 412502 bytes
+ DrawGraph Image Templates/sad_mouth.afdesign       | Bin 0 -> 399999 bytes
+ DrawGraph Image Templates/simple_eye.afdesign      | Bin 0 -> 399070 bytes
+ DrawGraph Image Templates/simple_mouth.afdesign    | Bin 0 -> 394512 bytes
+ DrawGraph Image Templates/tired_left_eye.afdesign  | Bin 0 -> 405378 bytes
+ .../upset_jagged_mouth.afdesign                    | Bin 0 -> 405031 bytes
+ DrawGraph/.DS_Store                                | Bin 6148 -> 8196 bytes
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  22 +--
+ .../project.xcworkspace/contents.xcworkspacedata   |   3 +
+ .../UserInterfaceState.xcuserstate                 | Bin 26614 -> 45091 bytes
+ .../xcshareddata/xcschemes/DrawGraph.xcscheme      | 111 +++++++++++
+ .../xcschemes/xcschememanagement.plist             |  18 ++
+ DrawGraph/DrawGraph/.DS_Store                      | Bin 6148 -> 6148 bytes
+ DrawGraph/DrawGraph/Assets.xcassets/.DS_Store      | Bin 0 -> 8196 bytes
+ .../AppIcon.appiconset/Contents.json               |  58 ++++--
+ .../AppIcon.appiconset/Icon-App-20x20@1x.png       | Bin 0 -> 858 bytes
+ .../AppIcon.appiconset/Icon-App-20x20@2x.png       | Bin 0 -> 1381 bytes
+ .../AppIcon.appiconset/Icon-App-20x20@3x.png       | Bin 0 -> 1567 bytes
+ .../AppIcon.appiconset/Icon-App-29x29@1x.png       | Bin 0 -> 1103 bytes
+ .../AppIcon.appiconset/Icon-App-29x29@2x.png       | Bin 0 -> 1864 bytes
+ .../AppIcon.appiconset/Icon-App-29x29@3x.png       | Bin 0 -> 2281 bytes
+ .../AppIcon.appiconset/Icon-App-40x40@1x.png       | Bin 0 -> 1381 bytes
+ .../AppIcon.appiconset/Icon-App-40x40@2x.png       | Bin 0 -> 2366 bytes
+ .../AppIcon.appiconset/Icon-App-40x40@3x.png       | Bin 0 -> 3110 bytes
+ .../AppIcon.appiconset/Icon-App-60x60@2x.png       | Bin 0 -> 3110 bytes
+ .../AppIcon.appiconset/Icon-App-60x60@3x.png       | Bin 0 -> 4690 bytes
+ .../AppIcon.appiconset/Icon-App-76x76@1x.png       | Bin 0 -> 2297 bytes
+ .../AppIcon.appiconset/Icon-App-76x76@2x.png       | Bin 0 -> 4391 bytes
+ .../AppIcon.appiconset/Icon-App-83.5x83.5@2x.png   | Bin 0 -> 4852 bytes
+ .../AppIcon.appiconset/ItunesArtwork@2x.png        | Bin 0 -> 20448 bytes
+ DrawGraph/DrawGraph/Assets.xcassets/pngs/.DS_Store | Bin 0 -> 10244 bytes
+ .../DrawGraph/Assets.xcassets/pngs/Contents.json   |   6 +
+ .../pngs/angry_left_eye.imageset/.DS_Store         | Bin 0 -> 6148 bytes
+ .../pngs/angry_left_eye.imageset/Contents.json     |  21 +++
+ .../angry_left_eye.imageset/angry_left_eye.png     | Bin 0 -> 4935 bytes
+ .../pngs/angry_right_eye.imageset/.DS_Store        | Bin 0 -> 6148 bytes
+ .../pngs/angry_right_eye.imageset/Contents.json    |  21 +++
+ .../angry_right_eye.imageset/angry_right_eye.png   | Bin 0 -> 6159 bytes
+ .../Assets.xcassets/pngs/draw.imageset/.DS_Store   | Bin 0 -> 6148 bytes
+ .../pngs/draw.imageset/Contents.json               |  21 +++
+ .../Assets.xcassets/pngs/draw.imageset/draw.png    | Bin 0 -> 9378 bytes
+ .../pngs/happy_jagged_mouth.imageset/.DS_Store     | Bin 0 -> 6148 bytes
+ .../pngs/happy_jagged_mouth.imageset/Contents.json |  21 +++
+ .../happy_jagged_mouth.png                         | Bin 0 -> 8023 bytes
+ .../pngs/happy_left_eye.imageset/.DS_Store         | Bin 0 -> 6148 bytes
+ .../pngs/happy_left_eye.imageset/Contents.json     |  21 +++
+ .../happy_left_eye.imageset/happy_left_eye.png     | Bin 0 -> 6403 bytes
+ .../pngs/happy_mouth.imageset/.DS_Store            | Bin 0 -> 6148 bytes
+ .../pngs/happy_mouth.imageset/Contents.json        |  21 +++
+ .../pngs/happy_mouth.imageset/happy_mouth.png      | Bin 0 -> 6064 bytes
+ .../pngs/happy_right_eye.imageset/.DS_Store        | Bin 0 -> 6148 bytes
+ .../pngs/happy_right_eye.imageset/Contents.json    |  21 +++
+ .../happy_right_eye.imageset/happy_right_eye.png   | Bin 0 -> 7760 bytes
+ .../pngs/sad_left_eye.imageset/.DS_Store           | Bin 0 -> 6148 bytes
+ .../pngs/sad_left_eye.imageset/Contents.json       |  21 +++
+ .../pngs/sad_left_eye.imageset/sad_left_eye.png    | Bin 0 -> 5565 bytes
+ .../pngs/sad_mouth.imageset/.DS_Store              | Bin 0 -> 6148 bytes
+ .../pngs/sad_mouth.imageset/Contents.json          |  21 +++
+ .../pngs/sad_mouth.imageset/sad_mouth.png          | Bin 0 -> 5983 bytes
+ .../pngs/sad_right_eye.imageset/.DS_Store          | Bin 0 -> 6148 bytes
+ .../pngs/sad_right_eye.imageset/Contents.json      |  21 +++
+ .../pngs/sad_right_eye.imageset/sad_right_eye.png  | Bin 0 -> 7006 bytes
+ .../pngs/simple_eye.imageset/.DS_Store             | Bin 0 -> 6148 bytes
+ .../pngs/simple_eye.imageset/Contents.json         |  21 +++
+ .../pngs/simple_eye.imageset/simple_eye.png        | Bin 0 -> 3264 bytes
+ .../pngs/simple_mouth.imageset/.DS_Store           | Bin 0 -> 6148 bytes
+ .../pngs/simple_mouth.imageset/Contents.json       |  21 +++
+ .../pngs/simple_mouth.imageset/simple_mouth.png    | Bin 0 -> 2672 bytes
+ .../pngs/tired_left_eye.imageset/.DS_Store         | Bin 0 -> 6148 bytes
+ .../pngs/tired_left_eye.imageset/Contents.json     |  21 +++
+ .../tired_left_eye.imageset/tired_left_eye.png     | Bin 0 -> 4512 bytes
+ .../pngs/tired_right_eye.imageset/.DS_Store        | Bin 0 -> 6148 bytes
+ .../pngs/tired_right_eye.imageset/Contents.json    |  21 +++
+ .../tired_right_eye.imageset/tired_right_eye.png   | Bin 0 -> 4512 bytes
+ .../pngs/upset_jagged_mouth.imageset/.DS_Store     | Bin 0 -> 6148 bytes
+ .../pngs/upset_jagged_mouth.imageset/Contents.json |  21 +++
+ .../upset_jagged_mouth.png                         | Bin 0 -> 8194 bytes
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     |  54 +++---
+ DrawGraph/DrawGraph/Info.plist                     |   4 +
+ DrawGraph/DrawGraph/ViewController.swift           | 210 +++++++++++++++------
+ DrawGraph/DrawGraphUITests/.DS_Store               | Bin 0 -> 6148 bytes
+ DrawGraph/draw.png                                 | Bin 9862 -> 0 bytes
+ DrawGraph/face.png                                 | Bin 0 -> 3272 bytes
+ 101 files changed, 693 insertions(+), 108 deletions(-)
+
+commit 2ffd8a86cc8330c08fd5a0ccc8bee6d058c90c2c
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 20 10:47:59 2019 -0400
+
+    Progress 9/20/19 10:47am
+
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ DrawGraph/.DS_Store                                | Bin 0 -> 6148 bytes
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |   4 +
+ .../UserInterfaceState.xcuserstate                 | Bin 24802 -> 26614 bytes
+ DrawGraph/DrawGraph/.DS_Store                      | Bin 0 -> 6148 bytes
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     | 176 ++++++++++++---------
+ DrawGraph/DrawGraph/ViewController.swift           |  27 +++-
+ DrawGraph/draw.png                                 | Bin 0 -> 9862 bytes
+ 8 files changed, 124 insertions(+), 83 deletions(-)
+
+commit 3de199577c52a99e32937fa74a1e5df493fd99ed
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Wed Sep 18 10:40:21 2019 -0400
+
+    Progress 9/18/19 10:40am
+
+ .../UserInterfaceState.xcuserstate                 | Bin 21111 -> 24802 bytes
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     | 102 ++++++++++++++++++++-
+ DrawGraph/DrawGraph/ViewController.swift           |  15 +--
+ 3 files changed, 107 insertions(+), 10 deletions(-)
+
+commit 96d63b8e2f510fd38ecfcde5549f1486bdaf96cf
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Mon Sep 16 10:44:36 2019 -0400
+
+    Progress 9/16/19 10:44am
+
+ .../UserInterfaceState.xcuserstate                 | Bin 21068 -> 21111 bytes
+ DrawGraph/DrawGraph/ViewController.swift           |  61 ++++++++++++++++++---
+ 2 files changed, 53 insertions(+), 8 deletions(-)
+
+commit 9e73c16db4b9143e736d54cbf3124fbe7733e54d
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 13 11:18:51 2019 -0400
+
+    Progress 9/13 11:20am
+
+ .../UserInterfaceState.xcuserstate                 | Bin 20644 -> 21068 bytes
+ DrawGraph/DrawGraph/ViewController.swift           |  26 +++++++++++++++------
+ 2 files changed, 19 insertions(+), 7 deletions(-)
+
+commit 9ae9e245b11ce32087b4d0153c8f2db010a0952e
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 13 10:43:04 2019 -0400
+
+    Progress 9/13 10:43am
+
+ .../UserInterfaceState.xcuserstate                 | Bin 9315 -> 20644 bytes
+ DrawGraph/DrawGraph/ViewController.swift           |  24 ++++++++++++++++++++-
+ 2 files changed, 23 insertions(+), 1 deletion(-)
+
+commit 185178a7972177c8219c1efcf93e359f4e9bea9f
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 13 09:36:07 2019 -0400
+
+    Realized Charts didn't do what I wanted, had to restart...
+
+ .DS_Store                                          |  Bin 6148 -> 6148 bytes
+ DrawGraph/.DS_Store                                |  Bin 8196 -> 0 bytes
+ DrawGraph/Charts.xcodeproj/project.pbxproj         | 1260 -------------
+ .../xcshareddata/xcschemes/Charts.xcscheme         |   88 -
+ .../xcshareddata/xcschemes/ChartsTests.xcscheme    |   89 -
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  453 ++---
+ .../UserInterfaceState.xcuserstate                 |  Bin 10326 -> 9315 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../DrawGraph.xcworkspace/contents.xcworkspacedata |   10 -
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 -
+ .../UserInterfaceState.xcuserstate                 |  Bin 19820 -> 0 bytes
+ DrawGraph/DrawGraph/AppDelegate.swift              |    2 +-
+ DrawGraph/DrawGraph/ViewController.swift           |    3 +-
+ DrawGraph/DrawGraphTests/DrawGraphTests.swift      |    2 +-
+ DrawGraph/DrawGraphUITests/DrawGraphUITests.swift  |    2 +-
+ DrawGraph/Podfile                                  |   21 -
+ DrawGraph/Podfile.lock                             |    3 -
+ DrawGraph/Pods/Manifest.lock                       |    3 -
+ DrawGraph/Pods/Pods.xcodeproj/project.pbxproj      |  770 --------
+ .../xcschemes/Pods-DrawGraph.xcscheme              |   71 -
+ .../xcschemes/Pods-DrawGraphTests.xcscheme         |   71 -
+ .../xcschemes/Pods-DrawGraphUITests.xcscheme       |   71 -
+ .../xcschemes/xcschememanagement.plist             |   32 -
+ .../Pods-DrawGraph/Pods-DrawGraph-Info.plist       |   26 -
+ .../Pods-DrawGraph-acknowledgements.markdown       |    3 -
+ .../Pods-DrawGraph-acknowledgements.plist          |   29 -
+ .../Pods-DrawGraph/Pods-DrawGraph-dummy.m          |    5 -
+ .../Pods-DrawGraph/Pods-DrawGraph-umbrella.h       |   16 -
+ .../Pods-DrawGraph/Pods-DrawGraph.debug.xcconfig   |    5 -
+ .../Pods-DrawGraph/Pods-DrawGraph.modulemap        |    6 -
+ .../Pods-DrawGraph/Pods-DrawGraph.release.xcconfig |    5 -
+ .../Pods-DrawGraphTests-Info.plist                 |   26 -
+ .../Pods-DrawGraphTests-acknowledgements.markdown  |    3 -
+ .../Pods-DrawGraphTests-acknowledgements.plist     |   29 -
+ .../Pods-DrawGraphTests-dummy.m                    |    5 -
+ .../Pods-DrawGraphTests-umbrella.h                 |   16 -
+ .../Pods-DrawGraphTests.debug.xcconfig             |    5 -
+ .../Pods-DrawGraphTests.modulemap                  |    6 -
+ .../Pods-DrawGraphTests.release.xcconfig           |    5 -
+ .../Pods-DrawGraphUITests-Info.plist               |   26 -
+ ...Pods-DrawGraphUITests-acknowledgements.markdown |    3 -
+ .../Pods-DrawGraphUITests-acknowledgements.plist   |   29 -
+ .../Pods-DrawGraphUITests-dummy.m                  |    5 -
+ .../Pods-DrawGraphUITests-umbrella.h               |   16 -
+ .../Pods-DrawGraphUITests.debug.xcconfig           |    5 -
+ .../Pods-DrawGraphUITests.modulemap                |    6 -
+ .../Pods-DrawGraphUITests.release.xcconfig         |    5 -
+ DrawGraph/Source/.DS_Store                         |  Bin 6148 -> 0 bytes
+ DrawGraph/Source/Charts/Animation/Animator.swift   |  280 ---
+ .../Charts/Animation/ChartAnimationEasing.swift    |  394 ----
+ DrawGraph/Source/Charts/Charts/BarChartView.swift  |  186 --
+ .../Charts/Charts/BarLineChartViewBase.swift       | 1958 --------------------
+ .../Source/Charts/Charts/BubbleChartView.swift     |   27 -
+ .../Charts/Charts/CandleStickChartView.swift       |   34 -
+ DrawGraph/Source/Charts/Charts/ChartViewBase.swift | 1034 -----------
+ .../Source/Charts/Charts/CombinedChartView.swift   |  246 ---
+ .../Charts/Charts/HorizontalBarChartView.swift     |  270 ---
+ DrawGraph/Source/Charts/Charts/LineChartView.swift |   28 -
+ DrawGraph/Source/Charts/Charts/PieChartView.swift  |  599 ------
+ .../Charts/Charts/PieRadarChartViewBase.swift      |  837 ---------
+ .../Source/Charts/Charts/RadarChartView.swift      |  220 ---
+ .../Source/Charts/Charts/ScatterChartView.swift    |   31 -
+ DrawGraph/Source/Charts/Components/AxisBase.swift  |  359 ----
+ .../Source/Charts/Components/ChartLimitLine.swift  |   74 -
+ .../Source/Charts/Components/ComponentBase.swift   |   37 -
+ .../Source/Charts/Components/Description.swift     |   46 -
+ DrawGraph/Source/Charts/Components/IMarker.swift   |   39 -
+ DrawGraph/Source/Charts/Components/Legend.swift    |  420 -----
+ .../Source/Charts/Components/LegendEntry.swift     |   88 -
+ .../Source/Charts/Components/MarkerImage.swift     |  106 --
+ .../Source/Charts/Components/MarkerView.swift      |   95 -
+ DrawGraph/Source/Charts/Components/XAxis.swift     |   75 -
+ DrawGraph/Source/Charts/Components/YAxis.swift     |  198 --
+ .../Data/Implementations/ChartBaseDataSet.swift    |  435 -----
+ .../Implementations/Standard/BarChartData.swift    |  107 --
+ .../Standard/BarChartDataEntry.swift               |  230 ---
+ .../Implementations/Standard/BarChartDataSet.swift |  167 --
+ .../BarLineScatterCandleBubbleChartData.swift      |   25 -
+ .../BarLineScatterCandleBubbleChartDataSet.swift   |   38 -
+ .../Implementations/Standard/BubbleChartData.swift |   32 -
+ .../Standard/BubbleChartDataEntry.swift            |   79 -
+ .../Standard/BubbleChartDataSet.swift              |   58 -
+ .../Implementations/Standard/CandleChartData.swift |   25 -
+ .../Standard/CandleChartDataEntry.swift            |   98 -
+ .../Standard/CandleChartDataSet.swift              |  136 --
+ .../Data/Implementations/Standard/ChartData.swift  |  612 ------
+ .../Implementations/Standard/ChartDataEntry.swift  |  110 --
+ .../Standard/ChartDataEntryBase.swift              |   96 -
+ .../Implementations/Standard/ChartDataSet.swift    |  574 ------
+ .../Standard/CombinedChartData.swift               |  301 ---
+ .../Implementations/Standard/LineChartData.swift   |   26 -
+ .../Standard/LineChartDataSet.swift                |  173 --
+ .../Standard/LineRadarChartDataSet.swift           |   85 -
+ .../LineScatterCandleRadarChartDataSet.swift       |   51 -
+ .../Implementations/Standard/PieChartData.swift    |  124 --
+ .../Standard/PieChartDataEntry.swift               |  119 --
+ .../Implementations/Standard/PieChartDataSet.swift |  135 --
+ .../Implementations/Standard/RadarChartData.swift  |   46 -
+ .../Standard/RadarChartDataEntry.swift             |   54 -
+ .../Standard/RadarChartDataSet.swift               |   59 -
+ .../Standard/ScatterChartData.swift                |   34 -
+ .../Standard/ScatterChartDataSet.swift             |   78 -
+ .../Charts/Data/Interfaces/IBarChartDataSet.swift  |   42 -
+ .../IBarLineScatterCandleBubbleChartDataSet.swift  |   26 -
+ .../Data/Interfaces/IBubbleChartDataSet.swift      |   27 -
+ .../Data/Interfaces/ICandleChartDataSet.swift      |   66 -
+ .../Charts/Data/Interfaces/IChartDataSet.swift     |  270 ---
+ .../Charts/Data/Interfaces/ILineChartDataSet.swift |   80 -
+ .../Data/Interfaces/ILineRadarChartDataSet.swift   |   45 -
+ .../ILineScatterCandleRadarChartDataSet.swift      |   36 -
+ .../Charts/Data/Interfaces/IPieChartDataSet.swift  |   64 -
+ .../Data/Interfaces/IRadarChartDataSet.swift       |   40 -
+ .../Data/Interfaces/IScatterChartDataSet.swift     |   36 -
+ .../Source/Charts/Filters/DataApproximator+N.swift |  152 --
+ .../Source/Charts/Filters/DataApproximator.swift   |  115 --
+ .../Formatters/DefaultAxisValueFormatter.swift     |  100 -
+ .../Charts/Formatters/DefaultFillFormatter.swift   |   58 -
+ .../Charts/Formatters/DefaultValueFormatter.swift  |  103 -
+ .../Charts/Formatters/IAxisValueFormatter.swift    |   30 -
+ .../Source/Charts/Formatters/IFillFormatter.swift  |   21 -
+ .../Source/Charts/Formatters/IValueFormatter.swift |   36 -
+ .../Formatters/IndexAxisValueFormatter.swift       |   59 -
+ .../Source/Charts/Highlight/BarHighlighter.swift   |  108 --
+ .../Source/Charts/Highlight/ChartHighlighter.swift |  180 --
+ .../Charts/Highlight/CombinedHighlighter.swift     |   70 -
+ DrawGraph/Source/Charts/Highlight/Highlight.swift  |  203 --
+ .../Highlight/HorizontalBarHighlighter.swift       |   63 -
+ .../Source/Charts/Highlight/IHighlighter.swift     |   23 -
+ .../Source/Charts/Highlight/PieHighlighter.swift   |   27 -
+ .../Charts/Highlight/PieRadarHighlighter.swift     |   61 -
+ .../Source/Charts/Highlight/RadarHighlighter.swift |   78 -
+ DrawGraph/Source/Charts/Highlight/Range.swift      |   52 -
+ .../Charts/Interfaces/BarChartDataProvider.swift   |   23 -
+ ...rLineScatterCandleBubbleChartDataProvider.swift |   23 -
+ .../Interfaces/BubbleChartDataProvider.swift       |   19 -
+ .../Interfaces/CandleChartDataProvider.swift       |   19 -
+ .../Charts/Interfaces/ChartDataProvider.swift      |   39 -
+ .../Interfaces/CombinedChartDataProvider.swift     |   19 -
+ .../Charts/Interfaces/LineChartDataProvider.swift  |   21 -
+ .../Interfaces/ScatterChartDataProvider.swift      |   19 -
+ .../Source/Charts/Jobs/AnimatedMoveViewJob.swift   |   33 -
+ .../Source/Charts/Jobs/AnimatedViewPortJob.swift   |  126 --
+ .../Source/Charts/Jobs/AnimatedZoomViewJob.swift   |   96 -
+ DrawGraph/Source/Charts/Jobs/MoveViewJob.swift     |   34 -
+ DrawGraph/Source/Charts/Jobs/ViewPortJob.swift     |   46 -
+ DrawGraph/Source/Charts/Jobs/ZoomViewJob.swift     |   71 -
+ .../Source/Charts/Renderers/AxisRendererBase.swift |  218 ---
+ .../Source/Charts/Renderers/BarChartRenderer.swift |  896 ---------
+ .../BarLineScatterCandleBubbleRenderer.swift       |  127 --
+ .../Charts/Renderers/BubbleChartRenderer.swift     |  359 ----
+ .../Renderers/CandleStickChartRenderer.swift       |  420 -----
+ .../Charts/Renderers/ChartDataRendererBase.swift   |   94 -
+ .../Charts/Renderers/CombinedChartRenderer.swift   |  209 ---
+ .../Renderers/HorizontalBarChartRenderer.swift     |  624 -------
+ .../Source/Charts/Renderers/LegendRenderer.swift   |  575 ------
+ .../Charts/Renderers/LineChartRenderer.swift       |  782 --------
+ .../Charts/Renderers/LineRadarRenderer.swift       |   54 -
+ .../Renderers/LineScatterCandleRadarRenderer.swift |   49 -
+ .../Source/Charts/Renderers/PieChartRenderer.swift |  926 ---------
+ .../Charts/Renderers/RadarChartRenderer.swift      |  475 -----
+ DrawGraph/Source/Charts/Renderers/Renderer.swift   |   26 -
+ .../Scatter/ChevronDownShapeRenderer.swift         |   36 -
+ .../Renderers/Scatter/ChevronUpShapeRenderer.swift |   36 -
+ .../Renderers/Scatter/CircleShapeRenderer.swift    |   63 -
+ .../Renderers/Scatter/CrossShapeRenderer.swift     |   36 -
+ .../Charts/Renderers/Scatter/IShapeRenderer.swift  |   32 -
+ .../Renderers/Scatter/SquareShapeRenderer.swift    |   63 -
+ .../Renderers/Scatter/TriangleShapeRenderer.swift  |   66 -
+ .../Charts/Renderers/Scatter/XShapeRenderer.swift  |   36 -
+ .../Charts/Renderers/ScatterChartRenderer.swift    |  249 ---
+ .../Source/Charts/Renderers/XAxisRenderer.swift    |  440 -----
+ .../XAxisRendererHorizontalBarChart.swift          |  356 ----
+ .../Charts/Renderers/XAxisRendererRadarChart.swift |   91 -
+ .../Source/Charts/Renderers/YAxisRenderer.swift    |  386 ----
+ .../YAxisRendererHorizontalBarChart.swift          |  363 ----
+ .../Charts/Renderers/YAxisRendererRadarChart.swift |  273 ---
+ .../Source/Charts/Utils/ChartColorTemplates.swift  |  198 --
+ DrawGraph/Source/Charts/Utils/ChartUtils.swift     |  296 ---
+ DrawGraph/Source/Charts/Utils/Fill.swift           |  323 ----
+ .../Charts/Utils/Platform+Accessibility.swift      |  197 --
+ DrawGraph/Source/Charts/Utils/Platform.swift       |  629 -------
+ DrawGraph/Source/Charts/Utils/Transformer.swift    |  170 --
+ .../Utils/TransformerHorizontalBarChart.swift      |   32 -
+ .../Source/Charts/Utils/ViewPortHandler.swift      |  553 ------
+ DrawGraph/Source/Supporting Files/Charts.h         |   28 -
+ DrawGraph/Source/Supporting Files/Info.plist       |   26 -
+ 186 files changed, 132 insertions(+), 28573 deletions(-)
+
+commit ee9270851244680d5b3ef9d2bb7126141ddfb852
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Wed Sep 11 10:33:29 2019 -0400
+
+    imported Charts
+
+ .DS_Store                                          |  Bin 6148 -> 6148 bytes
+ DrawGraph/.DS_Store                                |  Bin 0 -> 8196 bytes
+ DrawGraph/Charts.xcodeproj/project.pbxproj         | 1260 +++++++++++++
+ .../xcshareddata/xcschemes/Charts.xcscheme         |   88 +
+ .../xcshareddata/xcschemes/ChartsTests.xcscheme    |   89 +
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  199 ++
+ .../UserInterfaceState.xcuserstate                 |  Bin 9293 -> 10326 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../DrawGraph.xcworkspace/contents.xcworkspacedata |   10 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 +
+ .../UserInterfaceState.xcuserstate                 |  Bin 0 -> 19820 bytes
+ DrawGraph/DrawGraph/ViewController.swift           |    1 +
+ DrawGraph/Podfile                                  |   21 +
+ DrawGraph/Podfile.lock                             |    3 +
+ DrawGraph/Pods/Manifest.lock                       |    3 +
+ DrawGraph/Pods/Pods.xcodeproj/project.pbxproj      |  770 ++++++++
+ .../xcschemes/Pods-DrawGraph.xcscheme              |   71 +
+ .../xcschemes/Pods-DrawGraphTests.xcscheme         |   71 +
+ .../xcschemes/Pods-DrawGraphUITests.xcscheme       |   71 +
+ .../xcschemes/xcschememanagement.plist             |   32 +
+ .../Pods-DrawGraph/Pods-DrawGraph-Info.plist       |   26 +
+ .../Pods-DrawGraph-acknowledgements.markdown       |    3 +
+ .../Pods-DrawGraph-acknowledgements.plist          |   29 +
+ .../Pods-DrawGraph/Pods-DrawGraph-dummy.m          |    5 +
+ .../Pods-DrawGraph/Pods-DrawGraph-umbrella.h       |   16 +
+ .../Pods-DrawGraph/Pods-DrawGraph.debug.xcconfig   |    5 +
+ .../Pods-DrawGraph/Pods-DrawGraph.modulemap        |    6 +
+ .../Pods-DrawGraph/Pods-DrawGraph.release.xcconfig |    5 +
+ .../Pods-DrawGraphTests-Info.plist                 |   26 +
+ .../Pods-DrawGraphTests-acknowledgements.markdown  |    3 +
+ .../Pods-DrawGraphTests-acknowledgements.plist     |   29 +
+ .../Pods-DrawGraphTests-dummy.m                    |    5 +
+ .../Pods-DrawGraphTests-umbrella.h                 |   16 +
+ .../Pods-DrawGraphTests.debug.xcconfig             |    5 +
+ .../Pods-DrawGraphTests.modulemap                  |    6 +
+ .../Pods-DrawGraphTests.release.xcconfig           |    5 +
+ .../Pods-DrawGraphUITests-Info.plist               |   26 +
+ ...Pods-DrawGraphUITests-acknowledgements.markdown |    3 +
+ .../Pods-DrawGraphUITests-acknowledgements.plist   |   29 +
+ .../Pods-DrawGraphUITests-dummy.m                  |    5 +
+ .../Pods-DrawGraphUITests-umbrella.h               |   16 +
+ .../Pods-DrawGraphUITests.debug.xcconfig           |    5 +
+ .../Pods-DrawGraphUITests.modulemap                |    6 +
+ .../Pods-DrawGraphUITests.release.xcconfig         |    5 +
+ DrawGraph/Source/.DS_Store                         |  Bin 0 -> 6148 bytes
+ DrawGraph/Source/Charts/Animation/Animator.swift   |  280 +++
+ .../Charts/Animation/ChartAnimationEasing.swift    |  394 ++++
+ DrawGraph/Source/Charts/Charts/BarChartView.swift  |  186 ++
+ .../Charts/Charts/BarLineChartViewBase.swift       | 1958 ++++++++++++++++++++
+ .../Source/Charts/Charts/BubbleChartView.swift     |   27 +
+ .../Charts/Charts/CandleStickChartView.swift       |   34 +
+ DrawGraph/Source/Charts/Charts/ChartViewBase.swift | 1034 +++++++++++
+ .../Source/Charts/Charts/CombinedChartView.swift   |  246 +++
+ .../Charts/Charts/HorizontalBarChartView.swift     |  270 +++
+ DrawGraph/Source/Charts/Charts/LineChartView.swift |   28 +
+ DrawGraph/Source/Charts/Charts/PieChartView.swift  |  599 ++++++
+ .../Charts/Charts/PieRadarChartViewBase.swift      |  837 +++++++++
+ .../Source/Charts/Charts/RadarChartView.swift      |  220 +++
+ .../Source/Charts/Charts/ScatterChartView.swift    |   31 +
+ DrawGraph/Source/Charts/Components/AxisBase.swift  |  359 ++++
+ .../Source/Charts/Components/ChartLimitLine.swift  |   74 +
+ .../Source/Charts/Components/ComponentBase.swift   |   37 +
+ .../Source/Charts/Components/Description.swift     |   46 +
+ DrawGraph/Source/Charts/Components/IMarker.swift   |   39 +
+ DrawGraph/Source/Charts/Components/Legend.swift    |  420 +++++
+ .../Source/Charts/Components/LegendEntry.swift     |   88 +
+ .../Source/Charts/Components/MarkerImage.swift     |  106 ++
+ .../Source/Charts/Components/MarkerView.swift      |   95 +
+ DrawGraph/Source/Charts/Components/XAxis.swift     |   75 +
+ DrawGraph/Source/Charts/Components/YAxis.swift     |  198 ++
+ .../Data/Implementations/ChartBaseDataSet.swift    |  435 +++++
+ .../Implementations/Standard/BarChartData.swift    |  107 ++
+ .../Standard/BarChartDataEntry.swift               |  230 +++
+ .../Implementations/Standard/BarChartDataSet.swift |  167 ++
+ .../BarLineScatterCandleBubbleChartData.swift      |   25 +
+ .../BarLineScatterCandleBubbleChartDataSet.swift   |   38 +
+ .../Implementations/Standard/BubbleChartData.swift |   32 +
+ .../Standard/BubbleChartDataEntry.swift            |   79 +
+ .../Standard/BubbleChartDataSet.swift              |   58 +
+ .../Implementations/Standard/CandleChartData.swift |   25 +
+ .../Standard/CandleChartDataEntry.swift            |   98 +
+ .../Standard/CandleChartDataSet.swift              |  136 ++
+ .../Data/Implementations/Standard/ChartData.swift  |  612 ++++++
+ .../Implementations/Standard/ChartDataEntry.swift  |  110 ++
+ .../Standard/ChartDataEntryBase.swift              |   96 +
+ .../Implementations/Standard/ChartDataSet.swift    |  574 ++++++
+ .../Standard/CombinedChartData.swift               |  301 +++
+ .../Implementations/Standard/LineChartData.swift   |   26 +
+ .../Standard/LineChartDataSet.swift                |  173 ++
+ .../Standard/LineRadarChartDataSet.swift           |   85 +
+ .../LineScatterCandleRadarChartDataSet.swift       |   51 +
+ .../Implementations/Standard/PieChartData.swift    |  124 ++
+ .../Standard/PieChartDataEntry.swift               |  119 ++
+ .../Implementations/Standard/PieChartDataSet.swift |  135 ++
+ .../Implementations/Standard/RadarChartData.swift  |   46 +
+ .../Standard/RadarChartDataEntry.swift             |   54 +
+ .../Standard/RadarChartDataSet.swift               |   59 +
+ .../Standard/ScatterChartData.swift                |   34 +
+ .../Standard/ScatterChartDataSet.swift             |   78 +
+ .../Charts/Data/Interfaces/IBarChartDataSet.swift  |   42 +
+ .../IBarLineScatterCandleBubbleChartDataSet.swift  |   26 +
+ .../Data/Interfaces/IBubbleChartDataSet.swift      |   27 +
+ .../Data/Interfaces/ICandleChartDataSet.swift      |   66 +
+ .../Charts/Data/Interfaces/IChartDataSet.swift     |  270 +++
+ .../Charts/Data/Interfaces/ILineChartDataSet.swift |   80 +
+ .../Data/Interfaces/ILineRadarChartDataSet.swift   |   45 +
+ .../ILineScatterCandleRadarChartDataSet.swift      |   36 +
+ .../Charts/Data/Interfaces/IPieChartDataSet.swift  |   64 +
+ .../Data/Interfaces/IRadarChartDataSet.swift       |   40 +
+ .../Data/Interfaces/IScatterChartDataSet.swift     |   36 +
+ .../Source/Charts/Filters/DataApproximator+N.swift |  152 ++
+ .../Source/Charts/Filters/DataApproximator.swift   |  115 ++
+ .../Formatters/DefaultAxisValueFormatter.swift     |  100 +
+ .../Charts/Formatters/DefaultFillFormatter.swift   |   58 +
+ .../Charts/Formatters/DefaultValueFormatter.swift  |  103 +
+ .../Charts/Formatters/IAxisValueFormatter.swift    |   30 +
+ .../Source/Charts/Formatters/IFillFormatter.swift  |   21 +
+ .../Source/Charts/Formatters/IValueFormatter.swift |   36 +
+ .../Formatters/IndexAxisValueFormatter.swift       |   59 +
+ .../Source/Charts/Highlight/BarHighlighter.swift   |  108 ++
+ .../Source/Charts/Highlight/ChartHighlighter.swift |  180 ++
+ .../Charts/Highlight/CombinedHighlighter.swift     |   70 +
+ DrawGraph/Source/Charts/Highlight/Highlight.swift  |  203 ++
+ .../Highlight/HorizontalBarHighlighter.swift       |   63 +
+ .../Source/Charts/Highlight/IHighlighter.swift     |   23 +
+ .../Source/Charts/Highlight/PieHighlighter.swift   |   27 +
+ .../Charts/Highlight/PieRadarHighlighter.swift     |   61 +
+ .../Source/Charts/Highlight/RadarHighlighter.swift |   78 +
+ DrawGraph/Source/Charts/Highlight/Range.swift      |   52 +
+ .../Charts/Interfaces/BarChartDataProvider.swift   |   23 +
+ ...rLineScatterCandleBubbleChartDataProvider.swift |   23 +
+ .../Interfaces/BubbleChartDataProvider.swift       |   19 +
+ .../Interfaces/CandleChartDataProvider.swift       |   19 +
+ .../Charts/Interfaces/ChartDataProvider.swift      |   39 +
+ .../Interfaces/CombinedChartDataProvider.swift     |   19 +
+ .../Charts/Interfaces/LineChartDataProvider.swift  |   21 +
+ .../Interfaces/ScatterChartDataProvider.swift      |   19 +
+ .../Source/Charts/Jobs/AnimatedMoveViewJob.swift   |   33 +
+ .../Source/Charts/Jobs/AnimatedViewPortJob.swift   |  126 ++
+ .../Source/Charts/Jobs/AnimatedZoomViewJob.swift   |   96 +
+ DrawGraph/Source/Charts/Jobs/MoveViewJob.swift     |   34 +
+ DrawGraph/Source/Charts/Jobs/ViewPortJob.swift     |   46 +
+ DrawGraph/Source/Charts/Jobs/ZoomViewJob.swift     |   71 +
+ .../Source/Charts/Renderers/AxisRendererBase.swift |  218 +++
+ .../Source/Charts/Renderers/BarChartRenderer.swift |  896 +++++++++
+ .../BarLineScatterCandleBubbleRenderer.swift       |  127 ++
+ .../Charts/Renderers/BubbleChartRenderer.swift     |  359 ++++
+ .../Renderers/CandleStickChartRenderer.swift       |  420 +++++
+ .../Charts/Renderers/ChartDataRendererBase.swift   |   94 +
+ .../Charts/Renderers/CombinedChartRenderer.swift   |  209 +++
+ .../Renderers/HorizontalBarChartRenderer.swift     |  624 +++++++
+ .../Source/Charts/Renderers/LegendRenderer.swift   |  575 ++++++
+ .../Charts/Renderers/LineChartRenderer.swift       |  782 ++++++++
+ .../Charts/Renderers/LineRadarRenderer.swift       |   54 +
+ .../Renderers/LineScatterCandleRadarRenderer.swift |   49 +
+ .../Source/Charts/Renderers/PieChartRenderer.swift |  926 +++++++++
+ .../Charts/Renderers/RadarChartRenderer.swift      |  475 +++++
+ DrawGraph/Source/Charts/Renderers/Renderer.swift   |   26 +
+ .../Scatter/ChevronDownShapeRenderer.swift         |   36 +
+ .../Renderers/Scatter/ChevronUpShapeRenderer.swift |   36 +
+ .../Renderers/Scatter/CircleShapeRenderer.swift    |   63 +
+ .../Renderers/Scatter/CrossShapeRenderer.swift     |   36 +
+ .../Charts/Renderers/Scatter/IShapeRenderer.swift  |   32 +
+ .../Renderers/Scatter/SquareShapeRenderer.swift    |   63 +
+ .../Renderers/Scatter/TriangleShapeRenderer.swift  |   66 +
+ .../Charts/Renderers/Scatter/XShapeRenderer.swift  |   36 +
+ .../Charts/Renderers/ScatterChartRenderer.swift    |  249 +++
+ .../Source/Charts/Renderers/XAxisRenderer.swift    |  440 +++++
+ .../XAxisRendererHorizontalBarChart.swift          |  356 ++++
+ .../Charts/Renderers/XAxisRendererRadarChart.swift |   91 +
+ .../Source/Charts/Renderers/YAxisRenderer.swift    |  386 ++++
+ .../YAxisRendererHorizontalBarChart.swift          |  363 ++++
+ .../Charts/Renderers/YAxisRendererRadarChart.swift |  273 +++
+ .../Source/Charts/Utils/ChartColorTemplates.swift  |  198 ++
+ DrawGraph/Source/Charts/Utils/ChartUtils.swift     |  296 +++
+ DrawGraph/Source/Charts/Utils/Fill.swift           |  323 ++++
+ .../Charts/Utils/Platform+Accessibility.swift      |  197 ++
+ DrawGraph/Source/Charts/Utils/Platform.swift       |  629 +++++++
+ DrawGraph/Source/Charts/Utils/Transformer.swift    |  170 ++
+ .../Utils/TransformerHorizontalBarChart.swift      |   32 +
+ .../Source/Charts/Utils/ViewPortHandler.swift      |  553 ++++++
+ DrawGraph/Source/Supporting Files/Charts.h         |   28 +
+ DrawGraph/Source/Supporting Files/Info.plist       |   26 +
+ 183 files changed, 28442 insertions(+), 1 deletion(-)
+
+commit b116762017c077b317c1653315203ad745400a81
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Wed Sep 11 10:25:19 2019 -0400
+
+    Charts library import didn't work, had to start from scratch
+
+ .DS_Store                                          |  Bin 6148 -> 6148 bytes
+ DrawGraph/.DS_Store                                |  Bin 6148 -> 0 bytes
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  393 +++-----
+ .../UserInterfaceState.xcuserstate                 |  Bin 24812 -> 9293 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../DrawGraph.xcworkspace/contents.xcworkspacedata |   10 -
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 -
+ .../UserInterfaceState.xcuserstate                 |  Bin 11972 -> 0 bytes
+ DrawGraph/DrawGraph/AppDelegate.swift              |    2 +-
+ DrawGraph/DrawGraph/ViewController.swift           |    3 +-
+ DrawGraph/DrawGraphTests/DrawGraphTests.swift      |    2 +-
+ DrawGraph/DrawGraphUITests/DrawGraphUITests.swift  |    2 +-
+ DrawGraph/Podfile                                  |   21 -
+ DrawGraph/Podfile.lock                             |   16 -
+ DrawGraph/Pods/.DS_Store                           |  Bin 8196 -> 0 bytes
+ DrawGraph/Pods/AFNetworking/.DS_Store              |  Bin 6148 -> 0 bytes
+ .../Pods/AFNetworking/AFNetworking/AFHTTPClient.h  |  501 ----------
+ .../Pods/AFNetworking/AFNetworking/AFHTTPClient.m  |  709 -------------
+ .../AFNetworking/AFHTTPRequestOperation.h          |  109 --
+ .../AFNetworking/AFHTTPRequestOperation.m          |  190 ----
+ .../AFNetworking/AFImageRequestOperation.h         |  123 ---
+ .../AFNetworking/AFImageRequestOperation.m         |  257 -----
+ .../AFNetworking/AFJSONRequestOperation.h          |   68 --
+ .../AFNetworking/AFJSONRequestOperation.m          |  154 ---
+ .../AFNetworking/AFNetworking/AFJSONUtilities.h    |   26 -
+ .../AFNetworking/AFNetworking/AFJSONUtilities.m    |  210 ----
+ .../AFNetworkActivityIndicatorManager.h            |   66 --
+ .../AFNetworkActivityIndicatorManager.m            |  114 ---
+ .../Pods/AFNetworking/AFNetworking/AFNetworking.h  |   44 -
+ .../AFNetworking/AFPropertyListRequestOperation.h  |   74 --
+ .../AFNetworking/AFPropertyListRequestOperation.m  |  154 ---
+ .../AFNetworking/AFURLConnectionOperation.h        |  223 -----
+ .../AFNetworking/AFURLConnectionOperation.m        |  518 ----------
+ .../AFNetworking/AFXMLRequestOperation.h           |   96 --
+ .../AFNetworking/AFXMLRequestOperation.m           |  193 ----
+ .../AFNetworking/UIImageView+AFNetworking.h        |   75 --
+ .../AFNetworking/UIImageView+AFNetworking.m        |  181 ----
+ DrawGraph/Pods/AFNetworking/LICENSE                |   19 -
+ DrawGraph/Pods/AFNetworking/README.md              |  185 ----
+ DrawGraph/Pods/Manifest.lock                       |   16 -
+ DrawGraph/Pods/Pods.xcodeproj/project.pbxproj      | 1044 --------------------
+ .../xcschemes/AFNetworking.xcscheme                |   60 --
+ .../xcschemes/Pods-DrawGraph.xcscheme              |   71 --
+ .../xcschemes/Pods-DrawGraphTests.xcscheme         |   71 --
+ .../xcschemes/Pods-DrawGraphUITests.xcscheme       |   71 --
+ .../xcschemes/xcschememanagement.plist             |   39 -
+ .../AFNetworking/AFNetworking-Info.plist           |   26 -
+ .../AFNetworking/AFNetworking-dummy.m              |    5 -
+ .../AFNetworking/AFNetworking-prefix.pch           |   12 -
+ .../AFNetworking/AFNetworking-umbrella.h           |   27 -
+ .../AFNetworking/AFNetworking.modulemap            |    6 -
+ .../AFNetworking/AFNetworking.xcconfig             |    9 -
+ .../Pods-DrawGraph/Pods-DrawGraph-Info.plist       |   26 -
+ .../Pods-DrawGraph-acknowledgements.markdown       |   26 -
+ .../Pods-DrawGraph-acknowledgements.plist          |   58 --
+ .../Pods-DrawGraph/Pods-DrawGraph-dummy.m          |    5 -
+ ...awGraph-frameworks-Debug-input-files.xcfilelist |    2 -
+ ...wGraph-frameworks-Debug-output-files.xcfilelist |    1 -
+ ...Graph-frameworks-Release-input-files.xcfilelist |    2 -
+ ...raph-frameworks-Release-output-files.xcfilelist |    1 -
+ .../Pods-DrawGraph/Pods-DrawGraph-frameworks.sh    |  171 ----
+ .../Pods-DrawGraph/Pods-DrawGraph-umbrella.h       |   16 -
+ .../Pods-DrawGraph/Pods-DrawGraph.debug.xcconfig   |    9 -
+ .../Pods-DrawGraph/Pods-DrawGraph.modulemap        |    6 -
+ .../Pods-DrawGraph/Pods-DrawGraph.release.xcconfig |    9 -
+ .../Pods-DrawGraphTests-Info.plist                 |   26 -
+ .../Pods-DrawGraphTests-acknowledgements.markdown  |    3 -
+ .../Pods-DrawGraphTests-acknowledgements.plist     |   29 -
+ .../Pods-DrawGraphTests-dummy.m                    |    5 -
+ .../Pods-DrawGraphTests-umbrella.h                 |   16 -
+ .../Pods-DrawGraphTests.debug.xcconfig             |    8 -
+ .../Pods-DrawGraphTests.modulemap                  |    6 -
+ .../Pods-DrawGraphTests.release.xcconfig           |    8 -
+ .../Pods-DrawGraphUITests-Info.plist               |   26 -
+ ...Pods-DrawGraphUITests-acknowledgements.markdown |    3 -
+ .../Pods-DrawGraphUITests-acknowledgements.plist   |   29 -
+ .../Pods-DrawGraphUITests-dummy.m                  |    5 -
+ .../Pods-DrawGraphUITests-umbrella.h               |   16 -
+ .../Pods-DrawGraphUITests.debug.xcconfig           |    8 -
+ .../Pods-DrawGraphUITests.modulemap                |    6 -
+ .../Pods-DrawGraphUITests.release.xcconfig         |    8 -
+ 81 files changed, 132 insertions(+), 6607 deletions(-)
+
+commit f96e973f8d3c886f7f779ede7670df671a61b609
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Mon Sep 9 10:41:38 2019 -0400
+
+    added cocoapods
+
+ .DS_Store                                          |  Bin 0 -> 6148 bytes
+ DrawGraph/.DS_Store                                |  Bin 0 -> 6148 bytes
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      |  139 +++
+ .../UserInterfaceState.xcuserstate                 |  Bin 14501 -> 24812 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../DrawGraph.xcworkspace/contents.xcworkspacedata |   10 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 +
+ .../UserInterfaceState.xcuserstate                 |  Bin 0 -> 11972 bytes
+ DrawGraph/DrawGraph/ViewController.swift           |    1 +
+ DrawGraph/Podfile                                  |   21 +
+ DrawGraph/Podfile.lock                             |   16 +
+ DrawGraph/Pods/.DS_Store                           |  Bin 0 -> 8196 bytes
+ DrawGraph/Pods/AFNetworking/.DS_Store              |  Bin 0 -> 6148 bytes
+ .../Pods/AFNetworking/AFNetworking/AFHTTPClient.h  |  501 ++++++++++
+ .../Pods/AFNetworking/AFNetworking/AFHTTPClient.m  |  709 +++++++++++++
+ .../AFNetworking/AFHTTPRequestOperation.h          |  109 ++
+ .../AFNetworking/AFHTTPRequestOperation.m          |  190 ++++
+ .../AFNetworking/AFImageRequestOperation.h         |  123 +++
+ .../AFNetworking/AFImageRequestOperation.m         |  257 +++++
+ .../AFNetworking/AFJSONRequestOperation.h          |   68 ++
+ .../AFNetworking/AFJSONRequestOperation.m          |  154 +++
+ .../AFNetworking/AFNetworking/AFJSONUtilities.h    |   26 +
+ .../AFNetworking/AFNetworking/AFJSONUtilities.m    |  210 ++++
+ .../AFNetworkActivityIndicatorManager.h            |   66 ++
+ .../AFNetworkActivityIndicatorManager.m            |  114 +++
+ .../Pods/AFNetworking/AFNetworking/AFNetworking.h  |   44 +
+ .../AFNetworking/AFPropertyListRequestOperation.h  |   74 ++
+ .../AFNetworking/AFPropertyListRequestOperation.m  |  154 +++
+ .../AFNetworking/AFURLConnectionOperation.h        |  223 +++++
+ .../AFNetworking/AFURLConnectionOperation.m        |  518 ++++++++++
+ .../AFNetworking/AFXMLRequestOperation.h           |   96 ++
+ .../AFNetworking/AFXMLRequestOperation.m           |  193 ++++
+ .../AFNetworking/UIImageView+AFNetworking.h        |   75 ++
+ .../AFNetworking/UIImageView+AFNetworking.m        |  181 ++++
+ DrawGraph/Pods/AFNetworking/LICENSE                |   19 +
+ DrawGraph/Pods/AFNetworking/README.md              |  185 ++++
+ DrawGraph/Pods/Manifest.lock                       |   16 +
+ DrawGraph/Pods/Pods.xcodeproj/project.pbxproj      | 1044 ++++++++++++++++++++
+ .../xcschemes/AFNetworking.xcscheme                |   60 ++
+ .../xcschemes/Pods-DrawGraph.xcscheme              |   71 ++
+ .../xcschemes/Pods-DrawGraphTests.xcscheme         |   71 ++
+ .../xcschemes/Pods-DrawGraphUITests.xcscheme       |   71 ++
+ .../xcschemes/xcschememanagement.plist             |   39 +
+ .../AFNetworking/AFNetworking-Info.plist           |   26 +
+ .../AFNetworking/AFNetworking-dummy.m              |    5 +
+ .../AFNetworking/AFNetworking-prefix.pch           |   12 +
+ .../AFNetworking/AFNetworking-umbrella.h           |   27 +
+ .../AFNetworking/AFNetworking.modulemap            |    6 +
+ .../AFNetworking/AFNetworking.xcconfig             |    9 +
+ .../Pods-DrawGraph/Pods-DrawGraph-Info.plist       |   26 +
+ .../Pods-DrawGraph-acknowledgements.markdown       |   26 +
+ .../Pods-DrawGraph-acknowledgements.plist          |   58 ++
+ .../Pods-DrawGraph/Pods-DrawGraph-dummy.m          |    5 +
+ ...awGraph-frameworks-Debug-input-files.xcfilelist |    2 +
+ ...wGraph-frameworks-Debug-output-files.xcfilelist |    1 +
+ ...Graph-frameworks-Release-input-files.xcfilelist |    2 +
+ ...raph-frameworks-Release-output-files.xcfilelist |    1 +
+ .../Pods-DrawGraph/Pods-DrawGraph-frameworks.sh    |  171 ++++
+ .../Pods-DrawGraph/Pods-DrawGraph-umbrella.h       |   16 +
+ .../Pods-DrawGraph/Pods-DrawGraph.debug.xcconfig   |    9 +
+ .../Pods-DrawGraph/Pods-DrawGraph.modulemap        |    6 +
+ .../Pods-DrawGraph/Pods-DrawGraph.release.xcconfig |    9 +
+ .../Pods-DrawGraphTests-Info.plist                 |   26 +
+ .../Pods-DrawGraphTests-acknowledgements.markdown  |    3 +
+ .../Pods-DrawGraphTests-acknowledgements.plist     |   29 +
+ .../Pods-DrawGraphTests-dummy.m                    |    5 +
+ .../Pods-DrawGraphTests-umbrella.h                 |   16 +
+ .../Pods-DrawGraphTests.debug.xcconfig             |    8 +
+ .../Pods-DrawGraphTests.modulemap                  |    6 +
+ .../Pods-DrawGraphTests.release.xcconfig           |    8 +
+ .../Pods-DrawGraphUITests-Info.plist               |   26 +
+ ...Pods-DrawGraphUITests-acknowledgements.markdown |    3 +
+ .../Pods-DrawGraphUITests-acknowledgements.plist   |   29 +
+ .../Pods-DrawGraphUITests-dummy.m                  |    5 +
+ .../Pods-DrawGraphUITests-umbrella.h               |   16 +
+ .../Pods-DrawGraphUITests.debug.xcconfig           |    8 +
+ .../Pods-DrawGraphUITests.modulemap                |    6 +
+ .../Pods-DrawGraphUITests.release.xcconfig         |    8 +
+ 78 files changed, 6476 insertions(+), 1 deletion(-)
+
+commit f5168dfe79db6a5aaf6157c758baebf24f3a4305
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Mon Sep 9 10:01:28 2019 -0400
+
+    generated app template
+
+ DrawGraph/DrawGraph.xcodeproj/project.pbxproj      | 591 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 14501 bytes
+ .../xcschemes/xcschememanagement.plist             |  14 +
+ DrawGraph/DrawGraph/AppDelegate.swift              |  46 ++
+ .../AppIcon.appiconset/Contents.json               |  98 ++++
+ DrawGraph/DrawGraph/Assets.xcassets/Contents.json  |   6 +
+ .../DrawGraph/Base.lproj/LaunchScreen.storyboard   |  25 +
+ DrawGraph/DrawGraph/Base.lproj/Main.storyboard     |  24 +
+ DrawGraph/DrawGraph/Info.plist                     |  45 ++
+ DrawGraph/DrawGraph/ViewController.swift           |  20 +
+ DrawGraph/DrawGraphTests/DrawGraphTests.swift      |  34 ++
+ DrawGraph/DrawGraphTests/Info.plist                |  22 +
+ DrawGraph/DrawGraphUITests/DrawGraphUITests.swift  |  34 ++
+ DrawGraph/DrawGraphUITests/Info.plist              |  22 +
+ 16 files changed, 996 insertions(+)
+
+commit 98ab7960abecc62e5c55b4d0d106ba98695fad10
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Mon Sep 9 09:56:43 2019 -0400
+
+    first commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)

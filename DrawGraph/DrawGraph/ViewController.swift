@@ -22,6 +22,7 @@ let colorDict = [UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1).cgCo
                  UIColor(red: 3/255, green: 169/255, blue: 1/255, alpha: 1).cgColor, //green
                  UIColor(red: 0/255, green: 23/255, blue: 255/255, alpha: 1).cgColor, //blue
                  UIColor(red: 122/255, green: 7/255, blue: 214/255, alpha: 1).cgColor, //purple
+                 UIColor(red: 255/255, green: 0/255, blue: 255/255, alpha: 1).cgColor, //pink
                  UIColor(red: 154/255, green: 154/255, blue: 154/255, alpha: 1).cgColor] // gray
 
 let leftEyeDict = ["simple_eye.png",
@@ -88,7 +89,7 @@ class ViewController: UIViewController {
             height_value = min((Int(height!.text!) ?? -1), (drawable_height - originY_value))
             width_value = min((Int(width!.text!) ?? -1), (screen_width - originX_value))
             
-            colorNum = Int.random(in: 0..<7)
+            colorNum = Int.random(in: 0..<8)
             eyeNum = Int.random(in: 0..<5)
             mouthNum = Int.random(in: 0..<5)
             
@@ -110,7 +111,6 @@ class ViewController: UIViewController {
             
             if(originY_value < 0) {
                 return
-                //originY_value = 0
             }
             else if(originY_value > drawable_height){
                 originY_value = drawable_height - 10
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
             
             originX?.text = String(originX_value)
             originY?.text = String(originY_value)
-            colorNum = Int.random(in: 0..<7)
+            colorNum = Int.random(in: 0..<8)
             eyeNum = Int.random(in: 0..<5)
             mouthNum = Int.random(in: 0..<5)
         }
