@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		5932B9F12335CD370041EF98 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = SOURCE_ROOT; };
-		59691E17232BD2950057FF47 /* DrawGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59691E17232BD2950057FF47 /* Rectangles!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rectangles!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59691E1A232BD2950057FF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59691E1C232BD2950057FF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59691E1F232BD2950057FF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		59691E18232BD2950057FF47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59691E17232BD2950057FF47 /* DrawGraph.app */,
+				59691E17232BD2950057FF47 /* Rectangles!.app */,
 				59691E2B232BD29A0057FF47 /* DrawGraphTests.xctest */,
 				59691E36232BD29A0057FF47 /* DrawGraphUITests.xctest */,
 			);
@@ -145,7 +145,7 @@
 			);
 			name = DrawGraph;
 			productName = DrawGraph;
-			productReference = 59691E17232BD2950057FF47 /* DrawGraph.app */;
+			productReference = 59691E17232BD2950057FF47 /* Rectangles!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		59691E2A232BD29A0057FF47 /* DrawGraphTests */ = {
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mlvangorden.DrawGraph;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rectangles!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mlvangorden.DrawGraph;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rectangles!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

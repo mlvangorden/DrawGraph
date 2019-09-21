@@ -13,17 +13,16 @@ let screen_width = Int(screenBounds.width)
 let screen_height = Int(screenBounds.height)
 let screen_scale = UIScreen.main.scale
 
-let drawable_top_offset = 150
-let drawable_bottom_offset = 30
-let drawable_height = (screen_height - drawable_top_offset - drawable_bottom_offset)
+let drawable_top_offset = 140
+let drawable_height = (screen_height - drawable_top_offset)
 
-let colorDict = [UIColor.red.cgColor,
-                 UIColor.orange.cgColor,
-                 UIColor.yellow.cgColor,
-                 UIColor.green.cgColor,
-                 UIColor.blue.cgColor,
-                 UIColor.purple.cgColor,
-                 UIColor.lightGray.cgColor]
+let colorDict = [UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1).cgColor, //red
+                 UIColor(red: 255/255, green: 128/255, blue: 0/255, alpha: 1).cgColor, //orange
+                 UIColor(red: 255/255, green: 238/255, blue: 0/255, alpha: 1).cgColor, //yellow
+                 UIColor(red: 3/255, green: 169/255, blue: 1/255, alpha: 1).cgColor, //green
+                 UIColor(red: 0/255, green: 23/255, blue: 255/255, alpha: 1).cgColor, //blue
+                 UIColor(red: 122/255, green: 7/255, blue: 214/255, alpha: 1).cgColor, //purple
+                 UIColor(red: 154/255, green: 154/255, blue: 154/255, alpha: 1).cgColor] // gray
 
 let leftEyeDict = ["simple_eye.png",
                    "happy_left_eye.png",
@@ -66,7 +65,7 @@ class ViewController: UIViewController {
     var right_eye = UIImageView()
     var mouth = UIImageView()
     
-    let f = UIView(frame: CGRect(x: 0, y: drawable_top_offset, width: screen_width, height: screen_height - drawable_bottom_offset))
+    let f = UIView(frame: CGRect(x: 0, y: drawable_top_offset, width: screen_width, height: screen_height))
     var lastPoint = CGPoint.zero
     
     var shape = CAShapeLayer()
@@ -75,11 +74,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let line1 : UIView = UIView(frame: CGRect(x: 0, y: drawable_top_offset, width: Int(screen_width), height: 1) )
-        let line2 : UIView = UIView(frame: CGRect(x: 0, y: screen_height - drawable_bottom_offset, width: screen_width, height: 1))
         line1.backgroundColor = UIColor.black
-        line2.backgroundColor = UIColor.black
         self.view.addSubview(line1)
-        self.view.addSubview(line2)
         
         setupTextFields()
     }
@@ -113,7 +109,8 @@ class ViewController: UIViewController {
             originY_value = Int(lastPoint.y)
             
             if(originY_value < 0) {
-                originY_value = 0
+                return
+                //originY_value = 0
             }
             else if(originY_value > drawable_height){
                 originY_value = drawable_height - 10
@@ -128,6 +125,10 @@ class ViewController: UIViewController {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if(originY_value < 0) {
+            return
+        }
+        
         if let touch = touches.first {
             let currentPoint = touch.location(in: f)
             if(currentPoint.x < lastPoint.x) {
@@ -138,8 +139,14 @@ class ViewController: UIViewController {
                 width_value = Int(currentPoint.x) - originX_value
             }
             if(currentPoint.y < lastPoint.y) {
-                originY_value = max(Int(currentPoint.y), 0)
-                height_value = Int(lastPoint.y) - originY_value
+                if(currentPoint.y > CGFloat(drawable_height)){
+                    originY_value = drawable_height - 10
+                    height_value = Int(lastPoint.y) - originY_value
+                }
+                else{
+                    originY_value = max(Int(currentPoint.y), 0)
+                    height_value = Int(lastPoint.y) - originY_value
+                }
             }
             else{
                 height_value = min((Int(currentPoint.y) - originY_value), (drawable_height - originY_value - 1))
@@ -171,7 +178,7 @@ class ViewController: UIViewController {
         height?.text = String(height_value)
         
         shape.fillColor = colorDict[color_number]
-        shape.path = UIBezierPath(roundedRect: CGRect(x: originX_value, y: originY_value + drawable_top_offset + 1, width: width_value, height: height_value), cornerRadius: 50).cgPath
+        shape.path = UIBezierPath(roundedRect: CGRect(x: originX_value, y: originY_value + drawable_top_offset + 1, width: width_value, height: height_value), cornerRadius: 30).cgPath
         view.layer.addSublayer(shape)
     }
     
@@ -228,6 +235,14 @@ class ViewController: UIViewController {
     
     @objc func doneButtonAction() {
         self.view.endEditing(true)
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .portrait
+        } else {
+            return .all
+        }
     }
 
 }
