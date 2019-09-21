@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5932B9F22335CD370041EF98 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 5932B9F12335CD370041EF98 /* face.png */; };
 		59691E1B232BD2950057FF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E1A232BD2950057FF47 /* AppDelegate.swift */; };
 		59691E1D232BD2950057FF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E1C232BD2950057FF47 /* ViewController.swift */; };
 		59691E20232BD2950057FF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59691E1E232BD2950057FF47 /* Main.storyboard */; };
@@ -14,18 +15,17 @@
 		59691E25232BD29A0057FF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59691E23232BD29A0057FF47 /* LaunchScreen.storyboard */; };
 		59691E30232BD29A0057FF47 /* DrawGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E2F232BD29A0057FF47 /* DrawGraphTests.swift */; };
 		59691E3B232BD29A0057FF47 /* DrawGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59691E3A232BD29A0057FF47 /* DrawGraphUITests.swift */; };
-		59691E4B23351A910057FF47 /* draw.png in Resources */ = {isa = PBXBuildFile; fileRef = 59691E4A23351A910057FF47 /* draw.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59691E2C232BD29A0057FF47 /* PBXContainerItemProxy */ = {
+		59691E37232BD29A0057FF47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59691E0F232BD2950057FF47 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 59691E16232BD2950057FF47;
 			remoteInfo = DrawGraph;
 		};
-		59691E37232BD29A0057FF47 /* PBXContainerItemProxy */ = {
+		59691E542335C10E0057FF47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59691E0F232BD2950057FF47 /* Project object */;
 			proxyType = 1;
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5932B9F12335CD370041EF98 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = SOURCE_ROOT; };
 		59691E17232BD2950057FF47 /* DrawGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59691E1A232BD2950057FF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59691E1C232BD2950057FF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		59691E36232BD29A0057FF47 /* DrawGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59691E3A232BD29A0057FF47 /* DrawGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawGraphUITests.swift; sourceTree = "<group>"; };
 		59691E3C232BD29A0057FF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59691E4A23351A910057FF47 /* draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,13 @@
 		59691E19232BD2950057FF47 /* DrawGraph */ = {
 			isa = PBXGroup;
 			children = (
-				59691E4A23351A910057FF47 /* draw.png */,
 				59691E1A232BD2950057FF47 /* AppDelegate.swift */,
 				59691E1C232BD2950057FF47 /* ViewController.swift */,
 				59691E1E232BD2950057FF47 /* Main.storyboard */,
 				59691E21232BD29A0057FF47 /* Assets.xcassets */,
 				59691E23232BD29A0057FF47 /* LaunchScreen.storyboard */,
 				59691E26232BD29A0057FF47 /* Info.plist */,
+				5932B9F12335CD370041EF98 /* face.png */,
 			);
 			path = DrawGraph;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				59691E2D232BD29A0057FF47 /* PBXTargetDependency */,
+				59691E552335C10E0057FF47 /* PBXTargetDependency */,
 			);
 			name = DrawGraphTests;
 			productName = DrawGraphTests;
@@ -233,8 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59691E25232BD29A0057FF47 /* LaunchScreen.storyboard in Resources */,
-				59691E4B23351A910057FF47 /* draw.png in Resources */,
 				59691E22232BD29A0057FF47 /* Assets.xcassets in Resources */,
+				5932B9F22335CD370041EF98 /* face.png in Resources */,
 				59691E20232BD2950057FF47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,15 +284,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		59691E2D232BD29A0057FF47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 59691E16232BD2950057FF47 /* DrawGraph */;
-			targetProxy = 59691E2C232BD29A0057FF47 /* PBXContainerItemProxy */;
-		};
 		59691E38232BD29A0057FF47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 59691E16232BD2950057FF47 /* DrawGraph */;
 			targetProxy = 59691E37232BD29A0057FF47 /* PBXContainerItemProxy */;
+		};
+		59691E552335C10E0057FF47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59691E16232BD2950057FF47 /* DrawGraph */;
+			targetProxy = 59691E542335C10E0057FF47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
