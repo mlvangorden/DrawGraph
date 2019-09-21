@@ -80,6 +80,8 @@ class ViewController: UIViewController {
         line2.backgroundColor = UIColor.black
         self.view.addSubview(line1)
         self.view.addSubview(line2)
+        
+        setupTextFields()
     }
     
     @IBAction func draw_rectangle(_ sender: UIButton){
@@ -149,11 +151,7 @@ class ViewController: UIViewController {
     }
     
     func createHead(color_number: Int) {
-        originX?.text = String(originX_value)
-        originY?.text = String(originY_value)
-        width?.text = String(width_value)
-        height?.text = String(height_value)
-        
+
         if(height_value < 10) {
             height_value = 10
         }
@@ -166,6 +164,11 @@ class ViewController: UIViewController {
         if(originY_value > drawable_height - 10) {
             originY_value = drawable_height - 10
         }
+        
+        originX?.text = String(originX_value)
+        originY?.text = String(originY_value)
+        width?.text = String(width_value)
+        height?.text = String(height_value)
         
         shape.fillColor = colorDict[color_number]
         shape.path = UIBezierPath(roundedRect: CGRect(x: originX_value, y: originY_value + drawable_top_offset + 1, width: width_value, height: height_value), cornerRadius: 50).cgPath
@@ -206,6 +209,25 @@ class ViewController: UIViewController {
         shape.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         width?.text = ""
         height?.text = ""
+    }
+    
+    func setupTextFields() {
+        let toolbar = UIToolbar(frame: CGRect(origin: .zero, size: .init(width: view.frame.size.width, height: 30)))
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneBtn = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonAction))
+        
+        toolbar.setItems([flexSpace, doneBtn], animated: false)
+        toolbar.sizeToFit()
+        
+        originX!.inputAccessoryView = toolbar
+        originY!.inputAccessoryView = toolbar
+        height!.inputAccessoryView = toolbar
+        width!.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneButtonAction() {
+        self.view.endEditing(true)
     }
 
 }
